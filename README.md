@@ -1,80 +1,164 @@
-# AGENDA PROGMUD (AGEN)
+AGENDA PROGMUD (AGEN)
+Documento da Aplicação Web para Agendamento de consultores da ProGmud
+Instituição: CENTRO PAULA SOUZA - FACULDADE DE TECNOLOGIA DE JAHU
 
-Sua plataforma inteligente para otimizar a gestão de agendas e a colaboração. Transforme a organização do seu dia a dia com eficiência e praticidade.
+Curso: TECNOLOGIA EM DESENVOLVimento DE SOFTWARE MULTIPLATAFORMA
 
-![Logo da aplicação AGEN](https://i.imgur.com/k2o2a1X.png)
+Autores: Luca Morato & Aquiles Augusto
 
-## 🎯 Sobre o Projeto
+Local: Jahu, SP - 1º semestre/2025
 
-[cite_start]AGEN é um sistema de agendamento criado para otimizar a experiência dos colaboradores da ProGmud[cite: 42]. [cite_start]O objetivo é facilitar a transferência de informações entre consultores e techleads, com a criação automática de agendas, envio individual por e-mail e organização de horários[cite: 47, 48].
+Sumário
+Resumo da Aplicação
 
-[cite_start]Este projeto foi desenvolvido como parte do curso de Tecnologia em Desenvolvimento de Software Multiplataforma da FATEC Jahu[cite: 3].
+Objetivos
 
-### Principais Objetivos:
-* [cite_start]**Mapear Processos Atuais:** Identificar como consultores, empresas e agendas são gerenciados para destacar a necessidade de automação[cite: 51].
-* [cite_start]**Definir Funcionalidades-Chave:** Listar as operações essenciais do sistema, como agendamento automatizado e controle de permissões[cite: 53].
-* [cite_start]**Propor uma Arquitetura Técnica:** Sugerir uma estrutura básica (front-end e back-end) para a transição de processos manuais para a plataforma web[cite: 55].
+Documento de Requisitos
 
-## ✨ Funcionalidades (Requisitos Funcionais)
+Requisitos Funcionais (RF)
 
-### Módulo de Cadastros e Gerenciamento (Core)
-* [cite_start]**RF01 - Cadastrar Consultores:** Permite que um administrador (Techlead) cadastre novos consultores no sistema[cite: 63].
-* [cite_start]**RF02 - Cadastrar Techleads:** Permite o cadastro de Techleads com permissões elevadas[cite: 68].
-* [cite_start]**RF03 - Cadastrar Clientes:** Permite o cadastro dos clientes da ProGmud[cite: 71].
-* [cite_start]**RF04 - Gerenciar Projetos/Períodos de Alocação:** Permite o cadastro e a gestão dos períodos de atuação dos consultores em clientes[cite: 73].
+Requisitos Não Funcionais (RNF)
 
-### Módulo de Agenda
-* [cite_start]**RF05 - Criar e Atribuir Agendas:** Techleads podem criar, editar e visualizar as agendas dos consultores [cite: 77][cite_start], com o sistema impedindo alocações em horários conflitantes[cite: 79].
-* [cite_start]**RF06 - Notificação Automática por E-mail:** O sistema envia um e-mail de notificação para o consultor sempre que uma agenda é criada, alterada ou excluída[cite: 80].
-* [cite_start]**RF07 - Visualização de Agenda Pessoal:** Consultores podem visualizar sua própria agenda em formato de calendário ou lista cronológica, sem permissão de edição[cite: 82, 83].
+Estudo de Viabilidade
 
-### Módulo de Autenticação e Perfis
-* [cite_start]**RF08 - Autenticação de Usuários:** Tela de login segura para consultores e techleads[cite: 85].
-* [cite_start]**RF09 - Níveis de Permissão:** [cite: 86]
-    * [cite_start]**Consultor:** Acesso restrito à visualização da própria agenda[cite: 87].
-    * [cite_start]**Techlead/Administrador:** Acesso completo aos módulos de cadastro e gerenciamento de agendas[cite: 88].
+Regras de Negócio
 
-### Páginas Informativas
-* [cite_start]**RF10 - Apresentação Institucional:** Páginas estáticas com informações sobre a ProGmud, o sistema e os desenvolvedores[cite: 91, 94, 95].
+Design
 
-## 🎨 Design
+Protótipo
 
-O design do projeto foi pensado para ser moderno e intuitivo.
+Aplicação
 
-* [cite_start]**Paleta de Cores:** Utiliza um esquema de cores monocromáticas com tons de azul para representar inovação e tecnologia[cite: 181, 182].
+Considerações Finais
 
-    ![Paleta de Cores](https://i.imgur.com/xTztj9E.png)
+Referências
 
-* [cite_start]**Tipografia:** A fonte escolhida foi a **Open Sans**, por sua versatilidade e excelente legibilidade em diversas telas[cite: 208, 209].
+1. Resumo da Aplicação Web
+Um sistema criado com o objetivo de otimizar a experiência dos colaboradores da ProGmud em seus trabalhos.
 
-    ![Fonte Open Sans](https://i.imgur.com/WJ8u1s1.png)
+1.1. Objetivos
+Objetivo Geral
+Facilitar a transferência de informações entre os consultores e techleads, com a criação automática de agendas, envio delas individualmente por e-mail e organização de horários.
 
-## 🛠️ Tecnologias Utilizadas
+Objetivos Específicos
+Mapear processos atuais: Identificar como consultores, empresas e agendas são cadastrados e gerenciados hoje, destacando a necessidade de automação.
 
-[cite_start]Para o desenvolvimento deste projeto, foram utilizadas as seguintes ferramentas gratuitas[cite: 115]:
-* [cite_start]**Design e Prototipagem:** Figma, Balsamiq [cite: 117]
-* [cite_start]**Desenvolvimento:** Visual Studio Code, Git [cite: 117]
-* [cite_start]**Banco de Dados:** SQLite, Firebase [cite: 117]
-* [cite_start]**Hospedagem:** GitHub [cite: 118]
+Definir funcionalidades-chave: Listar as principais operações do Sistema, como agendamento automatizado, envio de e-mail e controle das permissões para techleads e consultores.
 
-## 🚀 Protótipo e Aplicação
+Propor uma arquitetura técnica: Sugerir uma estrutura básica (front-end e back-end) para viabilizar a transição dos processos manuais para a plataforma web.
 
-[cite_start]Um protótipo navegável foi criado para demonstrar a estrutura e o fluxo da aplicação[cite: 249].
+2. Documento de Requisitos
+O documento de requisitos de sistema detalha as funcionalidades, características e restrições que o software deve atender. Ele serve como um guia para a equipe de desenvolvimento e garante que o produto final esteja alinhado com as expectativas dos stakeholders.
 
-* [cite_start]**Link do Protótipo:** [https://balsamiq.cloud/sfh5gws/pqjpwco/r46FF](https://balsamiq.cloud/sfh5gws/pqjpwco/r46FF) [cite: 251]
+2.1. Requisitos Funcionais
+Os Requisitos Funcionais descrevem as funcionalidades específicas que o sistema deve ser capaz de executar, representando as principais interações do usuário com a aplicação.
 
-### Página Inicial
+Módulo de Cadastros e Gerenciamento (Core)
+RF01 – Cadastrar Consultores: O sistema deve permitir que um usuário administrador (ou Techlead) cadastre novos consultores. As informações a serem armazenadas devem incluir: id_consultor (chave primária, gerada automaticamente), nome_completo, email_profissional, email_pessoal, cargo, especialidade_tecnica e status (Ativo/Inativo).
 
-![Protótipo da Página Inicial](https://i.imgur.com/8Qe5lM1.png)
+RF02 – Cadastrar Techleads: O sistema deve permitir o cadastro de Techleads, que terão permissões elevadas para gerenciar agendas. As informações devem incluir: id_techlead (chave primária), nome_completo, email_profissional e status (Ativo/Inativo).
 
-## 🧑‍💻 Desenvolvedores
+RF03 – Cadastrar Clientes: O sistema deve permitir o cadastro dos clientes da ProGmud. As informações devem incluir: id_cliente (chave primária), razao_social, cnpj, nome_contato_principal e email_contato.
 
-[cite_start]Este projeto foi idealizado e desenvolvido por[cite: 119]:
+RF04 – Gerenciar Projetos/Períodos de Alocação: O sistema deve permitir o cadastro e a gestão dos períodos de atuação e alocação dos consultores em clientes. As informações devem incluir: id_alocacao (chave primária), id_consultor (chave estrangeira), id_cliente (chave estrangeira), data_inicio, data_fim e descricao_do_projeto.
 
-* [cite_start]**Luca Morato** [cite: 8]
-* [cite_start]**Aquiles Augusto** [cite: 9]
+Módulo de Agenda
+RF05 – Criar e Atribuir Agendas: O sistema deve permitir que Techleads criem, editem e visualizem as agendas dos consultores. Ao criar uma nova agenda, o Techlead deverá associá-la a um consultor, cliente/projeto e definir data, hora_inicio, hora_fim e descricao_das_tarefas. O sistema deve impedir a alocação de um mesmo consultor em horários conflitantes.
 
-[cite_start]A divisão de tarefas focou Luca na parte de design, documentação, wireframe e protótipo, enquanto Aquiles trabalhou no código de programação[cite: 295].
+RF06 – Notificação Automática por E-mail: Após a criação, alteração ou exclusão de uma agenda, o sistema deve enviar automaticamente um e-mail de notificação para o email_profissional do consultor, contendo os detalhes da agenda ou o aviso de cancelamento.
 
----
-[cite_start]*Este README foi gerado com base no documento de especificação do projeto, datado do 1º semestre de 2025[cite: 11].*
+RF07 – Visualização de Agenda Pessoal: Consultores autenticados devem poder visualizar apenas a sua própria agenda (em formato de calendário ou lista cronológica), sem permissão de edição.
+
+Módulo de Autenticação e Perfis
+RF08 – Autenticação de Usuários: O sistema deve possuir uma tela de login segura onde consultores e techleads possam se autenticar usando seu e-mail profissional e uma senha.
+
+RF09 – Níveis de Permissão: O sistema deve ter pelo menos dois níveis de permissão:
+
+Consultor: Acesso restrito à visualização da própria agenda e páginas informativas.
+
+Techlead/Administrador: Acesso completo aos módulos de cadastro e gerenciamento de agendas de todos os consultores.
+
+Páginas Informativas (Conteúdo Estático)
+RF10 – Apresentação Institucional: O sistema deve conter páginas estáticas acessíveis a todos (mesmo sem login) com informações sobre a ProGmud (missão, visão, valores), sobre o sistema "Agenda ProGmud" e uma página de créditos para os desenvolvedores (nome, foto, links para LinkedIn e GitHub).
+
+2.2. Requisitos Não Funcionais
+Os Requisitos Não Funcionais definem os critérios de qualidade do sistema, garantindo que a experiência do usuário seja eficiente, segura e agradável.
+
+RNF01 – Usabilidade: A interface do sistema deve ser intuitiva, limpa e de fácil utilização, com formulários simplificados e elementos de navegação claramente identificáveis para minimizar a curva de aprendizado.
+
+RNF02 – Desempenho: A aplicação web deve ter tempos de resposta rápidos. O carregamento de páginas e a submissão de formulários devem ser concluídos em, no máximo, 3 segundos sob condições normais de rede.
+
+RNF03 – Acessibilidade: A solução deve seguir as diretrizes de acessibilidade da WCAG (Web Content Accessibility Guidelines), garantindo que seja utilizável por pessoas com diferentes tipos de deficiências.
+
+RNF04 – Compatibilidade: O sistema deve ser responsivo e funcionar corretamente nos principais navegadores (Google Chrome, Mozilla Firefox, Microsoft Edge e Safari) em suas versões mais recentes, tanto em desktops quanto em dispositivos móveis.
+
+RNF05 – Segurança: Todas as comunicações devem ser criptografadas via HTTPS. As senhas dos usuários devem ser armazenadas de forma criptografada (hashed). O sistema deve ser protegido contra vulnerabilidades comuns, como SQL Injection e Cross-Site Scripting (XSS).
+
+3. Estudo de Viabilidade
+Como estudantes, utilizaremos recursos gratuitos ou já disponíveis:
+
+Infraestrutura: Computador pessoal e conexão à internet da faculdade.
+
+Tecnologias: Ferramentas gratuitas (Visual Studio Code, Git, Figma, Balsamiq) e bancos de dados gratuitos (SQLite, Firebase).
+
+Hospedagem: GitHub.
+
+Mão de obra: Desenvolvimento realizado por Luca Morato e Aquiles Galvão, dividindo tarefas conforme as habilidades (ex.: front-end/back-end).
+
+4. Regras de Negócio
+Figura 1. Canvas do Modelo de Negócios. Fonte: Idealizado pela Equipe de Desenvolvimento (Luca & Aquiles Galvão) utilizando Sebrae Canvas (2025).
+
+5. Design
+Paleta de Cores
+As cores escolhidas seguem um esquema monocromático em tons de azul, buscando representar inovação e tecnologia.
+
+Figura 2. Paleta de Cores. Fonte: Idealizado pela Equipe de Desenvolvimento (Luca & Aquiles Galvão) utilizando Ibis Paint X (2025).
+
+Tipografia
+A fonte selecionada foi a Open Sans, uma fonte sem serifa altamente versátil e com excelente legibilidade em diferentes telas e meios.
+
+Figura 3. Fonte Open Sans. Fonte: Open Sans, obtida no repositório do Google Fonts.
+
+Logo
+O logo é um Isotipo que mistura a tipografia Open Sans com um símbolo formado pela sobreposição das letras que compõem o nome "AGEN".
+
+Figura 4. Logo da aplicação AGEN. Fonte: Idealizado pela Equipe de Desenvolvimento (Luca & Aquiles Galvão) utilizando Figma (2025).
+
+Wireframe
+O wireframe, que serve como estrutura inicial da aplicação, pode ser acessado no link abaixo:
+Acessar Wireframe no Balsamiq
+
+Modelo de Navegação
+Figura 5. Modelo de Navegação. Fonte: Idealizado pela Equipe de Desenvolvimento (Luca & Aquiles Galvão) utilizando Ibis Paint X (2025).
+
+6. Protótipo
+O protótipo do projeto foi criado na plataforma Figma e pode ser acessado através do link a seguir. A imagem abaixo representa a página inicial do protótipo.
+
+Acessar Protótipo Interativo
+
+Figura 6. Protótipo Da Página Inicial. Fonte: Idealizado pela Equipe de Desenvolvimento (Luca & Aquiles Galvão) utilizando Balsamiq (2025).
+
+7. Aplicação
+O repositório do projeto no GitHub pode ser encontrado no link abaixo:
+
+https://github.com/AquilesMorato/P.I-FATEC
+
+Figura 7. Página Inicial. Fonte: Idealizado pela Equipe de Desenvolvimento (Luca & Aquiles Galvão) utilizando Visual Studio Code (2025).
+
+8. Considerações Finais
+Durante a criação do aplicativo Agen, foram aplicadas várias metodologias aprendidas no curso de Desenvolvimento de Software Multiplataforma, assegurando uma construção organizada e bem planejada. O projeto encontrou obstáculos importantes, principalmente devido ao prazo limitado e à equipe pequena, demandando muita flexibilidade para superar essas dificuldades.
+
+A divisão de tarefas foi fundamental para o andamento do projeto. Embora ambos os desenvolvedores tenham participado de todas as etapas, houve uma especialização: Luca focou mais no design, documentação, wireframe e protótipo, enquanto Aquiles concentrou-se no desenvolvimento do código.
+
+Referências Bibliográficas
+MATTESON, Steve. Open Sans. Disponível em: https://fonts.google.com/specimen/Open+Sans. Acessado em 26 de maio de 2025.
+
+Balsamiq. Disponível em: balsamiq.com. Acessado em 21 de maio de 2025.
+
+GitHub. Disponível em: Github.com. Acessado em 20 de maio de 2025.
+
+WeHandle. Disponível em: https://wehandle.com.br. Acessado em 15 de maio de 2025.
+
+TRELLO. Disponível em: Trello.com. Acessado em 20 de maio de 2025.
+
+FIGMA. Disponível em: Figma.com. Acessado em 18 de maio de 2025.
