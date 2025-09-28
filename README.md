@@ -74,34 +74,59 @@ Facilitar a transferência de informações entre consultores e techleads, com:
 
 ## 📋 Documento de Requisitos
 
+Os requisitos definem **o que o sistema deve fazer** (funcionais) e **como deve se comportar** (não funcionais), garantindo que o **AGEN** atenda às necessidades da ProGmud de forma eficiente, segura e acessível.
+
 ### ✅ Requisitos Funcionais (RF)
 
-**Módulo de Cadastros e Gerenciamento (Core) 🗂️**
-- **RF01** – Cadastrar Consultores  
-- **RF02** – Cadastrar Techleads  
-- **RF03** – Cadastrar Clientes  
-- **RF04** – Gerenciar Projetos/Alocação  
+#### 🔹 Módulo de Cadastros e Gerenciamento (Core) 🗂️
+- **RF01 – Cadastrar Consultores:** Permitir que Techleads cadastrem novos consultores.  
+  **Dados:** `id_consultor (PK)`, `nome_completo`, `email_profissional`, `email_pessoal`, `cargo`, `especialidade_tecnica`, `status (Ativo/Inativo)`  
 
-**Módulo de Agenda 📅**
-- **RF05** – Criar e Atribuir Agendas  
-- **RF06** – Notificação Automática por E-mail  
-- **RF07** – Visualização de Agenda Pessoal  
+- **RF02 – Cadastrar Techleads:** Cadastro de Techleads com permissões elevadas.  
+  **Dados:** `id_techlead (PK)`, `nome_completo`, `email_profissional`, `status (Ativo/Inativo)`  
 
-**Módulo de Autenticação e Perfis 🔐**
-- **RF08** – Autenticação de Usuários  
-- **RF09** – Níveis de Permissão  
+- **RF03 – Cadastrar Clientes:** Cadastro dos clientes da ProGmud.  
+  **Dados:** `id_cliente (PK)`, `razao_social`, `cnpj`, `nome_contato_principal`, `email_contato`  
 
-**Páginas Estáticas 📖**
-- Sobre a ProGmud  
-- Sobre o Sistema  
-- Desenvolvedores  
+- **RF04 – Gerenciar Projetos/Alocação:** Cadastro e gestão de períodos de alocação dos consultores.  
+  **Dados:** `id_alocacao (PK)`, `id_consultor (FK)`, `id_cliente (FK)`, `data_inicio`, `data_fim`, `descricao_projeto`  
+
+---
+
+#### 🔹 Módulo de Agenda 📅
+- **RF05 – Criar e Atribuir Agendas:** Criação, edição e visualização de agendas por Techleads, com prevenção de conflitos de horário.  
+- **RF06 – Notificação Automática por E-mail:** Envio automático de e-mails após criação/alteração/exclusão de agendas.  
+- **RF07 – Visualização de Agenda Pessoal:** Consultores só podem visualizar suas próprias agendas, sem editar.  
+
+---
+
+#### 🔹 Módulo de Autenticação e Perfis 🔐
+- **RF08 – Autenticação de Usuários:** Tela de login com e-mail profissional + senha.  
+- **RF09 – Níveis de Permissão:**  
+  - **Consultor:** acesso restrito à agenda própria e páginas informativas.  
+  - **Techlead/Admin:** acesso total aos cadastros e gerenciamento de agendas.  
+
+---
+
+#### 🔹 Páginas Estáticas 📖
+- **RF10 – Apresentação Institucional:**  
+  Páginas públicas com:  
+  - Sobre a ProGmud (missão, visão, valores)  
+  - Sobre o Sistema (objetivos e funcionalidades)  
+  - Desenvolvedores (nome, foto, LinkedIn e GitHub)  
+
+---
 
 ### 🔧 Requisitos Não Funcionais (RNF)
-- **RNF01** – Usabilidade  
-- **RNF02** – Desempenho  
-- **RNF03** – Acessibilidade  
-- **RNF04** – Compatibilidade  
-- **RNF05** – Segurança  
+
+- **RNF01 – Usabilidade:** Interface simples, formulários claros e menus intuitivos.  
+- **RNF02 – Desempenho:** Resposta em até **3 segundos** em condições normais de rede.  
+- **RNF03 – Acessibilidade:** Seguir diretrizes da **WCAG**, com suporte a leitores de tela e navegação por teclado.  
+- **RNF04 – Compatibilidade:** Responsivo e funcional em **Chrome, Firefox, Edge e Safari** (desktop e mobile).  
+- **RNF05 – Segurança:**  
+  - Comunicação via **HTTPS**  
+  - Senhas com **hash**  
+  - Proteção contra **SQL Injection, XSS** e outras vulnerabilidades  
 
 ---
 
