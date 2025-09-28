@@ -1,23 +1,34 @@
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/150x150/00509E/FFFFFF%3Ftext%3DAGEN" alt="Logo da aplicação AGEN" />
+<img src="./assets/agen_logo.png" alt="Logo da aplicação AGEN" width="150px" />
 <h1>AGENDA PROGMUD (AGEN) 🗓️</h1>
-<p><strong>Documento da Aplicação Web para Agendamento de Consultores da ProGmud</strong></p>
+<p><strong>Aplicação Web para Agendamento de Consultores da ProGmud</strong></p>
 <p>
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/status-em%2520desenvolvimento-yellow" alt="Status do Projeto: Em Desenvolvimento">
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/licen%25C3%25A7a-MIT-blue" alt="Licença MIT">
 </p>
 </div>
 
-🏛️ Sobre o Projeto
-Instituição: CENTRO PAULA SOUZA - FACULDADE DE TECNOLOGIA DE JAHU
+<div align="center">
+<p>
+<a href="#-sobre-o-projeto">Sobre</a> •
+<a href="#-índice">Índice</a> •
+<a href="https://www.google.com/search?q=%23-requisitos">Requisitos</a> •
+<a href="https://www.google.com/search?q=%23-design">Design</a> •
+<a href="#-tecnologias">Tecnologias</a> •
+<a href="#-autores">Autores</a>
+</p>
+</div>
 
-Curso: TECNOLOGIA EM DESENVOLVIMENTO DE SOFTWARE MULTIPLATAFORMA
+<div align="center">
+<h2 id="-sobre-o-projeto">🏛️ Sobre o Projeto</h2>
+</div>
 
-Autores: Luca Morato & Aquiles Augusto
+O AGEN é um sistema web criado para otimizar a experiência e a organização dos colaboradores da ProGmud. O objetivo principal é automatizar o agendamento de consultores, centralizar informações e facilitar a comunicação entre techleads e a equipe, substituindo processos manuais por uma plataforma digital eficiente e intuitiva.
 
-Local: Jahu, SP - 1º semestre/2025
+<div align="center">
+<h2 id="-índice">🧭 Índice</h2>
+</div>
 
-🧭 Índice
 📝 Resumo da Aplicação
 
 🎯 Objetivos
@@ -42,137 +53,155 @@ Local: Jahu, SP - 1º semestre/2025
 
 📚 Referências
 
-📝 Resumo da Aplicação Web
-Um sistema criado com o objetivo de otimizar a experiência e a organização dos colaboradores da ProGmud em seus trabalhos diários.
+<div align="center">
+<h2 id="-resumo-da-aplicação">📝 Resumo da Aplicação</h2>
+</div>
 
 🎯 Objetivos
 Objetivo Geral
 Facilitar a transferência de informações entre os consultores e techleads, com a criação automática de agendas, envio delas individualmente por e-mail e organização inteligente de horários.
 
 Objetivos Específicos
-Mapear processos atuais: Identificar como consultores, empresas e agendas são cadastrados e gerenciados hoje, destacando a necessidade de automação.
+Mapear processos atuais: Identificar a necessidade de automação nos processos de cadastro e gerenciamento.
 
-Definir funcionalidades-chave: Listar as principais operações do Sistema, como agendamento automatizado, envio de e-mail e controle das permissões para techleads e consultores.
+Definir funcionalidades-chave: Listar as operações essenciais do sistema, como agendamento, notificações e controle de permissões.
 
-Propor uma arquitetura técnica: Sugerir uma estrutura básica (front-end e back-end) para viabilizar a transição dos processos manuais para a plataforma web.
+Propor uma arquitetura técnica: Sugerir uma estrutura de front-end e back-end para viabilizar a transição para a plataforma web.
 
-📋 Documento de Requisitos
-O documento de requisitos de sistema detalha as funcionalidades, características e restrições que o software deve atender. Ele serve como um guia para a equipe de desenvolvimento e garante que o produto final esteja alinhado com as expectativas dos stakeholders.
+<div align="center">
+<h2 id="-requisitos">📋 Documento de Requisitos</h2>
+</div>
 
 ✅ Requisitos Funcionais
-Descrevem as funcionalidades específicas que o sistema deve ser capaz de executar.
-
 Módulo de Cadastros e Gerenciamento (Core) 🗂️
-RF01 – Cadastrar Consultores: Permitir que um administrador (Techlead) cadastre novos consultores com os campos: id_consultor (PK), nome_completo, email_profissional, email_pessoal, cargo, especialidade_tecnica e status (Ativo/Inativo).
+RF01 – Cadastrar Consultores: Permitir que Techleads cadastrem novos consultores.
 
-RF02 – Cadastrar Techleads: Permitir o cadastro de Techleads, com permissões elevadas, contendo os campos: id_techlead (PK), nome_completo, email_profissional e status (Ativo/Inativo).
+RF02 – Cadastrar Techleads: Permitir o cadastro de Techleads com permissões elevadas.
 
-RF03 – Cadastrar Clientes: Permitir o cadastro dos clientes da ProGmud com os campos: id_cliente (PK), razao_social, cnpj, nome_contato_principal e email_contato.
+RF03 – Cadastrar Clientes: Permitir o cadastro dos clientes da ProGmud.
 
-RF04 – Gerenciar Projetos/Alocação: Permitir o cadastro e gestão dos períodos de alocação dos consultores, com os campos: id_alocacao (PK), id_consultor (FK), id_cliente (FK), data_inicio, data_fim e descricao_do_projeto.
+RF04 – Gerenciar Projetos/Alocação: Permitir o cadastro e gestão dos períodos de alocação dos consultores.
 
 Módulo de Agenda 📅
-RF05 – Criar e Atribuir Agendas: Permitir que Techleads criem, editem e visualizem agendas, associando-as a um consultor e projeto. O sistema deve impedir conflitos de horários.
+RF05 – Criar e Atribuir Agendas: Permitir que Techleads criem, editem e visualizem agendas, evitando conflitos de horários.
 
-RF06 – Notificação Automática por E-mail: Enviar um e-mail de notificação para o email_profissional do consultor sempre que uma agenda for criada, alterada ou excluída.
+RF06 – Notificação Automática por E-mail: Enviar notificações por e-mail sempre que uma agenda for criada, alterada ou excluída.
 
-RF07 – Visualização de Agenda Pessoal: Permitir que consultores autenticados visualizem apenas a sua própria agenda, sem permissão de edição.
+RF07 – Visualização de Agenda Pessoal: Permitir que consultores visualizem apenas a sua própria agenda, sem permissão de edição.
 
 Módulo de Autenticação e Perfis 🔐
-RF08 – Autenticação de Usuários: Disponibilizar uma tela de login segura para autenticação via e-mail profissional e senha.
+RF08 – Autenticação de Usuários: Disponibilizar uma tela de login segura.
 
-RF09 – Níveis de Permissão: Implementar pelo menos dois níveis de acesso:
-
-Consultor: Acesso restrito à visualização da própria agenda e páginas informativas.
-
-Techlead/Administrador: Acesso completo aos módulos de cadastro e gerenciamento de agendas.
-
-Páginas Informativas 🌐
-RF10 – Apresentação Institucional: Disponibilizar páginas estáticas (acessíveis sem login) com informações sobre a ProGmud, o sistema AGEN e uma página de créditos para os desenvolvedores.
+RF09 – Níveis de Permissão: Implementar perfis de Consultor e Techlead/Administrador com diferentes níveis de acesso.
 
 🔧 Requisitos Não Funcionais
-Definem os critérios de qualidade do sistema, garantindo uma experiência de usuário eficiente, segura e agradável.
+RNF01 – Usabilidade: Interface intuitiva, limpa e de fácil utilização.
 
-RNF01 – Usabilidade: A interface deve ser intuitiva, limpa e de fácil utilização para minimizar a curva de aprendizado.
+RNF02 – Desempenho: Tempo de resposta inferior a 3 segundos para ações críticas.
 
-RNF02 – Desempenho: O tempo de resposta para carregamento de páginas e submissão de formulários não deve exceder 3 segundos em condições normais de rede.
+RNF03 – Acessibilidade: Seguir as diretrizes da WCAG.
 
-RNF03 – Acessibilidade: Seguir as diretrizes de acessibilidade da WCAG para garantir o uso por pessoas com diferentes tipos de deficiências.
+RNF04 – Compatibilidade: Sistema responsivo, compatível com os principais navegadores e dispositivos.
 
-RNF04 – Compatibilidade: O sistema deve ser responsivo e funcionar corretamente nos principais navegadores (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari) em desktops e dispositivos móveis.
+RNF05 – Segurança: Comunicação via HTTPS, senhas com hash e proteção contra vulnerabilidades comuns (SQL Injection, XSS).
 
-RNF05 – Segurança: Comunicações criptografadas com HTTPS. Senhas armazenadas com hash. Proteção contra vulnerabilidades comuns (SQL Injection, XSS).
+<div align="center">
+<h2 id="-estudo-de-viabilidade">💡 Estudo de Viabilidade</h2>
+</div>
 
-💡 Estudo de Viabilidade
-Infraestrutura: Computador pessoal e conexão à internet da faculdade.
+Infraestrutura: Recursos computacionais próprios e da instituição de ensino.
 
-Tecnologias: Ferramentas gratuitas (VS Code, Git, Figma) e bancos de dados gratuitos (SQLite, Firebase).
+Tecnologias: Uso de ferramentas e plataformas gratuitas.
 
 Hospedagem: GitHub Pages para o front-end.
 
-Mão de obra: Desenvolvimento realizado por Luca Morato e Aquiles Galvão.
+Mão de obra: Desenvolvimento realizado pelos próprios autores do projeto.
 
-📈 Regras de Negócio
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x450/EFEFEF/333333%3Ftext%3DFigura%2B1:%2BCanvas%2Bdo%2BModelo%2Bde%2BNeg%C3%B3cios" alt="Canvas do Modelo de Negócios" />
-<p><em>Figura 1. Canvas do Modelo de Negócios. Fonte: Idealizado pela Equipe de Desenvolvimento (2025).</em></p>
+<h2 id="-regras-de-negócio">📈 Regras de Negócio</h2>
 </div>
 
-🎨 Design
-Paleta de Cores
-A paleta em tons de azul foi escolhida para representar inovação, confiança e tecnologia.
+<div align="center">
+<img src="./assets/canvas_modelo_negocios.png" alt="Imagem do Canvas do Modelo de Negócios" width="800px"/>
+<p><em>Figura 1. Canvas do Modelo de Negócios.</em></p>
+</div>
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x200/003366/FFFFFF%3Ftext%3DAzul%2BEscuro%2B%2523003366%26font%3Dopensans" alt="Paleta de Cor 1" />
-<img src="https://www.google.com/search?q=https://placehold.co/800x200/00509E/FFFFFF%3Ftext%3DAzul%2BPrincipal%2B%252300509E%26font%3Dopensans" alt="Paleta de Cor 2" />
-<img src="https://www.google.com/search?q=https://placehold.co/800x200/4D94DB/FFFFFF%3Ftext%3DAzul%2BClaro%2B%25234D94DB%26font%3Dopensans" alt="Paleta de Cor 3" />
-<p><em>Figura 2. Paleta de Cores. Fonte: Idealizado pela Equipe de Desenvolvimento (2025).</em></p>
+<h2 id="-design">🎨 Design</h2>
+</div>
+
+A identidade visual do projeto foi construída para transmitir modernidade, confiança e tecnologia.
+
+Paleta de Cores
+<div align="center">
+<img src="./assets/paleta_cores.png" alt="Imagem da Paleta de Cores do projeto" width="600px"/>
+<p><em>Figura 2. Paleta de Cores.</em></p>
 </div>
 
 Tipografia
-A fonte Open Sans foi selecionada por sua excelente legibilidade e versatilidade em diferentes dispositivos.
+A fonte Open Sans foi escolhida por sua excelente legibilidade e versatilidade em múltiplos dispositivos.
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x300/EFEFEF/333333%3Ftext%3DOpen%2BSans%2B-%2BAaBbCc%26font%3Dopensans" alt="Fonte Open Sans" />
-<p><em>Figura 3. Fonte Open Sans. Fonte: Google Fonts.</em></p>
+<img src="./assets/tipografia_opensans.png" alt="Imagem da Fonte Open Sans" width="600px"/>
+<p><em>Figura 3. Fonte Open Sans.</em></p>
 </div>
-
-Wireframe & Modelo de Navegação
-🔗 Acessar Wireframe no Balsamiq
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x450/EFEFEF/333333%3Ftext%3DFigura%2B5:%2BModelo%2Bde%2BNavega%C3%A7%C3%A3o" alt="Modelo de Navegação" />
-<p><em>Figura 5. Modelo de Navegação. Fonte: Idealizado pela Equipe de Desenvolvimento (2025).</em></p>
+<h2 id="-protótipo">📱 Protótipo</h2>
 </div>
 
-📱 Protótipo
-O protótipo interativo do projeto foi desenvolvido no Balsamiq e pode ser acessado no link abaixo.
+O protótipo e o wireframe foram desenvolvidos para validar a estrutura e o fluxo de navegação da aplicação antes do desenvolvimento.
 
-🔗 Acessar Protótipo Interativo
+🔗 Acessar Protótipo Interativo no Balsamiq
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x450/EFEFEF/333333%3Ftext%3DFigura%2B6:%2BProt%C3%B3tipo%2Bda%2BP%C3%A1gina%2BInicial" alt="Protótipo da Página Inicial" />
-<p><em>Figura 6. Protótipo Da Página Inicial. Fonte: Idealizado pela Equipe de Desenvolvimento (2025).</em></p>
+<img src="./assets/prototipo_pagina_inicial.png" alt="Imagem do Protótipo da Página Inicial" width="800px"/>
+<p><em>Figura 6. Protótipo da Página Inicial.</em></p>
 </div>
 
-🚀 Aplicação
-O código-fonte do projeto está hospedado no GitHub.
+<div align="center">
+<h2 id="-tecnologias">🛠️ Tecnologias Utilizadas</h2>
+</div>
+
+<div align="center">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/HTML5-E34F26%3Fstyle%3Dfor-the-badge%26logo%3Dhtml5%26logoColor%3Dwhite" alt="HTML5">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/CSS3-1572B6%3Fstyle%3Dfor-the-badge%26logo%3Dcss3%26logoColor%3Dwhite" alt="CSS3">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/JavaScript-F7DF1E%3Fstyle%3Dfor-the-badge%26logo%3Djavascript%26logoColor%3Dblack" alt="JavaScript">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Balsamiq-CC0000%3Fstyle%3Dfor-the-badge%26logo%3Dbalsamiq%26logoColor%3Dwhite" alt="Balsamiq">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Git-F05032%3Fstyle%3Dfor-the-badge%26logo%3Dgit%26logoColor%3Dwhite" alt="Git">
+</div>
+
+<div align="center">
+<h2 id="-aplicação">🚀 Aplicação</h2>
+</div>
+
+O código-fonte completo do projeto está disponível no GitHub.
 
 🔗 Acessar Repositório no GitHub
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x450/EFEFEF/333333%3Ftext%3DFigura%2B7:%2BP%C3%A1gina%2BInicial%2B(Aplica%C3%A7%C3%A3o%2BReal)" alt="Screenshot da Página Inicial da Aplicação" />
-<p><em>Figura 7. Página Inicial. Fonte: Idealizado pela Equipe de Desenvolvimento (2025).</em></p>
+<h2 id="-autores">👨‍💻 Autores</h2>
 </div>
 
-🏁 Considerações Finais
-A criação do aplicativo Agen foi um exercício prático das metodologias aprendidas no curso, garantindo uma construção organizada e bem planejada. Apesar dos desafios, como o prazo limitado e a equipe pequena, a flexibilidade e a divisão de tarefas foram fundamentais para o sucesso do projeto.
+<div align="center">
+<p>Este projeto foi desenvolvido com dedicação por:</p>
+<a href="https://www.google.com/search?q=https://github.com/AquilesMorato" style="margin-right: 20px;">Luca Morato</a>
+<a href="https://www.google.com/search?q=https://github.com/AquilesMorato">Aquiles Augusto</a>
+</div>
 
-📚 Referências Bibliográficas
+<div align="center">
+<h2 id="-considerações-finais">🏁 Considerações Finais</h2>
+</div>
+
+A criação do Agen foi um exercício prático fundamental para aplicar as metodologias de desenvolvimento de software aprendidas em sala de aula. Os desafios, como prazo e equipe reduzida, foram superados com flexibilidade, organização e uma clara divisão de tarefas, resultando em um projeto coeso e funcional.
+
+<div align="center">
+<h2 id="-referências-bibliográficas">📚 Referências</h2>
+</div>
+
 Open Sans Font: Google Fonts
 
 Balsamiq: balsamiq.com
 
 GitHub: github.com
-
-Figma: figma.com
